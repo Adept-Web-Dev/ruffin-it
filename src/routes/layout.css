@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@font-face {
+	font-family: 'Sentient';
+	src: url('../lib/assets/fonts/Sentient-Variable.woff2') format('woff2');
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Sentient';
+	src: url('../lib/assets/fonts/Sentient-VariableItalic.woff2') format('woff2');
+	font-weight: 100 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Nunito';
+	src: url('../lib/assets/fonts/Nunito-Variable.woff2') format('woff2');
+	font-weight: 200 1000;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Nunito';
+	src: url('../lib/assets/fonts/Nunito-VariableItalic.woff2') format('woff2');
+	font-weight: 200 1000;
+	font-style: italic;
+	font-display: swap;
+}
+
+@layer base {
+	body {
+		font-family: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+		font-weight: 350;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Sentient', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+		@apply text-balance;
+	}
+}
