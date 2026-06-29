@@ -6,7 +6,10 @@
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+	<meta name="robots" content="noindex, nofollow" />
+	<link rel="icon" href={favicon} />
+</svelte:head>
 
 <div class="flex min-h-dvh flex-col bg-stone-50 text-stone-900">
 	<Nav />
